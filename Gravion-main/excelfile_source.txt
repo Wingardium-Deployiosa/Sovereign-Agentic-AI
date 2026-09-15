@@ -1,0 +1,57 @@
+    def __init__(
+        self,
+        path_or_buffer,
+        engine: str | None = None,
+        storage_options: StorageOptions | None = None,
+        engine_kwargs: dict | None = None,
+    ) -> None:
+        if engine_kwargs is None:
+            engine_kwargs = {}
+
+        if engine is not None and engine not in self._engines:
+            raise ValueError(f"Unknown engine: {engine}")
+
+        # Always a string
+        self._io = stringify_path(path_or_buffer)
+
+        if engine is None:
+            # Only determine ext if it is needed
+            ext: str | None = None
+
+            if not isinstance(
+                path_or_buffer, (str, os.PathLike, ExcelFile)
+            ) and not is_file_like(path_or_buffer):
+                # GH#56692 - avoid importing xlrd if possible
+                if import_optional_dependency("xlrd", errors="ignore") is None:
+                    xlrd_version = None
+                else:
+                    import xlrd
+
+                    xlrd_version = Version(get_version(xlrd))
+
+                if xlrd_version is not None and isinstance(path_or_buffer, xlrd.Book):
+                    ext = "xls"
+
+            if ext is None:
+                ext = inspect_excel_format(
+                    content_or_path=path_or_buffer, storage_options=storage_options
+                )
+                if ext is None:
+                    raise ValueError(
+                        "Excel file format cannot be determined, you must specify "
+                        "an engine manually."
+                    )
+
+            engine = config.get_option(f"io.excel.{ext}.reader")
+            if engine == "auto":
+                engine = get_default_engine(ext, mode="reader")
+
+        assert engine is not None
+        self.engine = engine
+        self.storage_options = storage_options
+
+        self._reader = self._engines[engine](
+            self._io,
+            storage_options=storage_options,
+            engine_kwargs=engine_kwargs,
+        )

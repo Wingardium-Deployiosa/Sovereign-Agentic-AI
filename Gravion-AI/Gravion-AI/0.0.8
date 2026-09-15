@@ -1,0 +1,42 @@
+Collecting accelerate
+  Downloading accelerate-1.14.0-py3-none-any.whl.metadata (19 kB)
+Collecting qwen-vl-utils
+  Downloading qwen_vl_utils-0.0.14-py3-none-any.whl.metadata (9.0 kB)
+Requirement already satisfied: numpy>=1.17 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from accelerate) (2.3.1)
+Requirement already satisfied: packaging>=20.0 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from accelerate) (25.0)
+Collecting psutil (from accelerate)
+  Downloading psutil-7.2.2-cp37-abi3-win_amd64.whl.metadata (22 kB)
+Requirement already satisfied: pyyaml in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from accelerate) (6.0.2)
+Requirement already satisfied: torch>=2.0.0 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from accelerate) (2.7.1)
+Requirement already satisfied: huggingface_hub>=0.21.0 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from accelerate) (0.33.4)
+Requirement already satisfied: safetensors>=0.4.3 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from accelerate) (0.5.3)
+Collecting av (from qwen-vl-utils)
+  Downloading av-18.1.0-cp311-abi3-win_amd64.whl.metadata (5.1 kB)
+Requirement already satisfied: pillow in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from qwen-vl-utils) (11.3.0)
+Requirement already satisfied: requests in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from qwen-vl-utils) (2.32.4)
+Requirement already satisfied: filelock in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from huggingface_hub>=0.21.0->accelerate) (3.18.0)
+Requirement already satisfied: fsspec>=2023.5.0 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from huggingface_hub>=0.21.0->accelerate) (2025.7.0)
+Requirement already satisfied: tqdm>=4.42.1 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from huggingface_hub>=0.21.0->accelerate) (4.67.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from huggingface_hub>=0.21.0->accelerate) (4.14.1)
+Requirement already satisfied: sympy>=1.13.3 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from torch>=2.0.0->accelerate) (1.14.0)
+Requirement already satisfied: networkx in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from torch>=2.0.0->accelerate) (3.5)
+Requirement already satisfied: jinja2 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from torch>=2.0.0->accelerate) (3.1.6)
+Requirement already satisfied: setuptools in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from torch>=2.0.0->accelerate) (80.9.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)
+Requirement already satisfied: colorama in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from tqdm>=4.42.1->huggingface_hub>=0.21.0->accelerate) (0.4.6)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.2)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from requests->qwen-vl-utils) (3.4.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from requests->qwen-vl-utils) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from requests->qwen-vl-utils) (2.5.0)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\asus\appdata\local\programs\python\python313\lib\site-packages (from requests->qwen-vl-utils) (2025.7.9)
+Downloading accelerate-1.14.0-py3-none-any.whl (389 kB)
+Downloading qwen_vl_utils-0.0.14-py3-none-any.whl (8.1 kB)
+Downloading av-18.1.0-cp311-abi3-win_amd64.whl (27.6 MB)
+   ---------------------------------------- 27.6/27.6 MB 2.9 MB/s eta 0:00:00
+Downloading psutil-7.2.2-cp37-abi3-win_amd64.whl (137 kB)
+Installing collected packages: psutil, av, qwen-vl-utils, accelerate
+
+Successfully installed accelerate-1.14.0 av-18.1.0 psutil-7.2.2 qwen-vl-utils-0.0.14
+
+[notice] A new release of pip is available: 25.1.1 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip

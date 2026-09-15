@@ -1,0 +1,32 @@
+[
+  {
+    "id": "EVT-0001",
+    "time": "00:38:55",
+    "type": "upload",
+    "actor": "Gravion Admin",
+    "action": "Document uploaded",
+    "detail": "Pump_Maintenance.pdf saved to uploads/",
+    "status": "ok",
+    "hash": "67f03d25"
+  },
+  {
+    "id": "EVT-0002",
+    "time": "00:38:57",
+    "type": "system",
+    "actor": "KnowledgeRAG",
+    "action": "Document indexed",
+    "detail": "Pump_Maintenance.pdf (7 chunks)",
+    "status": "ok",
+    "hash": "80e70862"
+  },
+  {
+    "id": "EVT-0003",
+    "time": "01:44:51",
+    "type": "command",
+    "actor": "User",
+    "action": "Command executed",
+    "detail": "oh is it?... -> GeneralAgent",
+    "status": "ok",
+    "hash": "9ce13753"
+  }
+]

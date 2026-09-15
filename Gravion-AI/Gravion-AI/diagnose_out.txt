@@ -1,0 +1,6 @@
+=== All chunk text ===
+
+[0] page=1 section=''
+Meridian Petrochemical Industries Ltd. Equipment Maintenance Report - Centrifugal Pump Unit Document No.: MPI-MNT-2026-0417 Report Date: 28 August 2026 Plant / Unit: Ethylene Cracker Unit - 2 Prepared By: R. Iyer, Sr. Maintenance Engineer Facility Location: Coimbatore Petrochemical Complex Reviewed By: S. Menon, Plant Reliability Head Report Type: Scheduled Preventive Maintenance Status: Completed 1. Equipment Identification Parameter Details Equipment Tag No. P-204A Equipment Type Horizontal Centrifugal Pump Manufacturer Sundyne Fluid Systems Model No. SDX-4500HC Service Naphtha Feed Transfer Fluid Handled Naphtha (light hydrocarbon), Flammable Class IB Design Flow Rate 285 m3/hr Design Head 142 m Motor Rating 160 kW, 2980 RPM, 3-phase Seal Type API Plan 53B - Dual Mechanical Seal Installation Date 14 March 2019 Last Overhaul 02 September 2024 2. Inspection Checklist Item Inspection Point Status Remarks 1 Casing - visual inspection for cracks/corrosion Pass No abnormalities observed 2 Mechanical seal - leakage check Pass Barrier fluid pressure
+
+[1] page=1 section='vibration_analysis'
