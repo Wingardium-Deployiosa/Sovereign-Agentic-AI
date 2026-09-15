@@ -3,11 +3,8 @@
 An air-gapped, offline-first Agentic AI system built with a React/Vite frontend and a powerful Python FastAPI backend. The system is designed to run locally with strict privacy enforcement, ensuring no data leaves the host environment.
 
 ## 🎥 Video Demos
-*Once your videos are uploaded to Google Drive or YouTube, you can add the links here!*
-- [Demo Video 1 (e.g. footage 1) - Link here]()
-- [Demo Video 2 (e.g. footage 2) - Link here]()
-- [Demo Video 3 (e.g. footage 3) - Link here]()
-- [Demo Video 4 (e.g. footage 4) - Link here]()
+You can download and view all the demonstration videos for this project using the link below:
+- [Download Video Demos (ZIP)](https://drive.google.com/file/d/1qLv12K7tDiMGq6on4MIHNOAzWGbCMK1D/view?usp=sharing)
 
 ---
 
